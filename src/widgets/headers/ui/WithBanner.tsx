@@ -17,9 +17,9 @@ export const WithBanner = ({ children }: WithBannerProps) => {
       {children}
       <div
         className={cn(
-          "flex flex-col lg:flex-row  gap-5 max-w-[1240px] px-5 mx-auto text-white py-10 transition-all",
+          "flex flex-col lg:flex-row  gap-5 max-w-[1240px] px-5 mx-auto text-white py-10 transition-[height,padding] ",
           {
-            "h-0 py-0": path !== "/",
+            "h-0 py-0 invisible": path !== "/",
           }
         )}
       >
