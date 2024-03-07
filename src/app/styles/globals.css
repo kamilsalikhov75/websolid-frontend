@@ -4,8 +4,7 @@
 
 :root {
   --font-nunito: "Nunito", sans-serif;
-}
 
-.radix-themes {
-  --default-font-family: var(--font-nunito);
+  --blue-500: #4c5eff;
+  --blue-400: #7482FF;
 }

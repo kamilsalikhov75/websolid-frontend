@@ -16,13 +16,10 @@ export const NavLink = ({ children, href, ...props }: NavLinkProps) => {
   return (
     <Link
       href={href}
-      className={clsx(
-        "body-lg border-b-2 p-1 transition-colors text-whiteA-12",
-        {
-          "border-b-whiteA-12": isActive,
-          "border-b-transparent hover:text-whiteA-8": !isActive,
-        }
-      )}
+      className={clsx("body-lg border-b-2 p-1 transition-colors text-white", {
+        "border-b-whiteA-12": isActive,
+        "border-b-transparent hover:text-whiteA-8": !isActive,
+      })}
       {...props}
     >
       {children}
