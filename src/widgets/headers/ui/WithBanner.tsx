@@ -5,6 +5,7 @@ import { cn } from "@/shared/utils/cn";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import heroImage from "@/shared/assets/images/hero.png";
+import { useEffect } from "react";
 
 export interface WithBannerProps {
   children: React.ReactNode;
@@ -12,6 +13,11 @@ export interface WithBannerProps {
 
 export const WithBanner = ({ children }: WithBannerProps) => {
   const path = usePathname();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [path]);
+
   return (
     <div className="bg-blue-500">
       {children}
