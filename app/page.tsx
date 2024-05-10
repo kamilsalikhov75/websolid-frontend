@@ -1,9 +1,3 @@
-import { Button } from "@/shared/ui/buttons";
+import { HomePage } from "@/pages/home";
 
-export default function Home() {
-  return (
-    <>
-      <Button>click</Button>
-    </>
-  );
-}
+export default HomePage;

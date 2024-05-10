@@ -4,6 +4,10 @@ export const ROUTES = [
     href: "/",
   },
   {
+    label: "Услуги",
+    href: "/service",
+  },
+  {
     label: "Цены",
     href: "/price",
   },
